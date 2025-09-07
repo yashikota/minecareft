@@ -1,0 +1,13 @@
+name = "Minecareft"
+author = "kota"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "57483941160ac60fcf68c2e5959b8cf1744586328fd2b4ca096a7fc9b5a689ef"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.207"

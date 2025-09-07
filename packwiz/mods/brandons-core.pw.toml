@@ -1,0 +1,13 @@
+name = "Brandons Core"
+filename = "BrandonsCore-1.21.1-3.2.1.307.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/iFDWVIFV/versions/fiRrbwua/BrandonsCore-1.21.1-3.2.1.307.jar"
+hash-format = "sha512"
+hash = "900849c189a64f118b158388c38c5250182442ce1d0d4f9a94b6fbd39a810b062c16a21b6780b0dbeb4b6e93a67079beb4ce1f79af0040a0d8181d86f63bdaac"
+
+[update]
+[update.modrinth]
+mod-id = "iFDWVIFV"
+version = "fiRrbwua"

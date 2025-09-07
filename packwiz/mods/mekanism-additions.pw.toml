@@ -1,0 +1,13 @@
+name = "Mekanism Additions"
+filename = "MekanismAdditions-1.21.1-10.7.15.81.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/a6F3uASn/versions/Tg4ZeLNP/MekanismAdditions-1.21.1-10.7.15.81.jar"
+hash-format = "sha512"
+hash = "d8621cd7429e213259a5d7d175557920837a2259e6a7e6c1489af3ef9f3823bec644990fb7859c0c7952adf8d71684c82b931f04acf1ac99156bad7b8a5a340f"
+
+[update]
+[update.modrinth]
+mod-id = "a6F3uASn"
+version = "Tg4ZeLNP"

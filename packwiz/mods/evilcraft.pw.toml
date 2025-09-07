@@ -1,0 +1,13 @@
+name = "EvilCraft"
+filename = "evilcraft-1.21.1-neoforge-1.2.78.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/3ANq2btA/versions/ahcLaaEu/evilcraft-1.21.1-neoforge-1.2.78.jar"
+hash-format = "sha512"
+hash = "f49c8cacae35afd5dfa1897e63d93ab49dc3427a2f9e1fdb05102a6f0f44b42bbee927659ec33e134003560585650ce787e7acdd808bf2610db9fe2a5518c50c"
+
+[update]
+[update.modrinth]
+mod-id = "3ANq2btA"
+version = "ahcLaaEu"

@@ -1,0 +1,13 @@
+name = "Untranslated Items"
+filename = "UntranslatedItems-neoforge-1.21-1.10.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "79a15dd5b7574d6641fc18b67f80bb974c4fb9dc"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5574485
+project-id = 401770

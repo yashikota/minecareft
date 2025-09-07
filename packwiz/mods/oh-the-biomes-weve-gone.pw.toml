@@ -1,0 +1,13 @@
+name = "Oh The Biomes We've Gone"
+filename = "Oh-The-Biomes-Weve-Gone-NeoForge-2.4.7.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/NTi7d3Xc/versions/ofQ2F7NG/Oh-The-Biomes-Weve-Gone-NeoForge-2.4.7.jar"
+hash-format = "sha512"
+hash = "f5a6ef92dbbd61d5a245ef99115b0eee5eb7608f0323609b17a51da4a91382b72e60fc3ff6178a5a95126fe514e7ffac05658472e1d318c37422894f1b4d118a"
+
+[update]
+[update.modrinth]
+mod-id = "NTi7d3Xc"
+version = "ofQ2F7NG"

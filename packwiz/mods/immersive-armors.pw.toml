@@ -1,0 +1,13 @@
+name = "Immersive Armors"
+filename = "immersive_armors-1.7.1+1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/eE2Db4YU/versions/f3V07285/immersive_armors-1.7.1%2B1.21.1-neoforge.jar"
+hash-format = "sha512"
+hash = "ffdf98dbcf3866c78a2cc1d705bff62409775a18dffb04a8fb459ec7198823e2747427ea9d097eb538d41358ca863ea1eed842ff249ccefdffac65a22b39f0d0"
+
+[update]
+[update.modrinth]
+mod-id = "eE2Db4YU"
+version = "f3V07285"

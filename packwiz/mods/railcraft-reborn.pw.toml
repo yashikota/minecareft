@@ -1,0 +1,13 @@
+name = "Railcraft Reborn"
+filename = "railcraft-reborn-1.21.1-1.2.7.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/rO6kKst6/versions/XxGhCYJP/railcraft-reborn-1.21.1-1.2.7.jar"
+hash-format = "sha512"
+hash = "bd6dfe193cf39ca650be5503cac77ee4e97900a335e807faad49c98030fad7e8b8054739dbe4601b16c2c174b89acc43548097c0926b3cfff1a9345a2e00d3cb"
+
+[update]
+[update.modrinth]
+mod-id = "rO6kKst6"
+version = "XxGhCYJP"

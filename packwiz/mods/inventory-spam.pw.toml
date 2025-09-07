@@ -1,0 +1,13 @@
+name = "Inventory Spam"
+filename = "InventorySpam-1.21-1.6.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e2fa78ce0d00999a6d00de98a14c5b06ee548f15"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5446521
+project-id = 266450
