@@ -19,7 +19,7 @@ services:
       VERSION: "1.21.1"
       NEOFORGE_VERSION: "21.1.207"
       MEMORY: "16G"
-      PACKWIZ_URL: "https://yashikota.github.io/packwiz-installer-rust/testdata/pack.toml"
+      PACKWIZ_URL: "https://yashikota.github.io/minecareft/packwiz/pack.toml"
       ENABLE_RCON: "true"
       RCON_PASSWORD: ${MINECRAFT_RCON_PASSWORD}
       ENABLE_QUERY: "true"
