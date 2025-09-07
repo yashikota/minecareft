@@ -1,0 +1,65 @@
+services:
+  mc:
+    image: itzg/minecraft-server:java21
+    container_name: mc
+    restart: unless-stopped
+    tty: true
+    stdin_open: true
+    ports:
+      - target: 25565
+        published: 25565
+        protocol: tcp
+        mode: host
+    env_file: .env
+    environment:
+      EULA: "true"
+      TZ: "Asia/Tokyo"
+      ENABLE_WHITELIST: "true"
+      TYPE: "NeoForge"
+      VERSION: "1.21.1"
+      NEOFORGE_VERSION: "21.1.207"
+      MEMORY: "16G"
+      PACKWIZ_URL: "https://yashikota.github.io/packwiz-installer-rust/testdata/pack.toml"
+      ENABLE_RCON: "true"
+      RCON_PASSWORD: ${MINECRAFT_RCON_PASSWORD}
+      ENABLE_QUERY: "true"
+    volumes:
+      - type: bind
+        source: ./data
+        target: /data
+  backups:
+    image: itzg/mc-backup
+    container_name: mc-backup
+    restart: unless-stopped
+    depends_on:
+      - mc
+    network_mode: "service:mc"
+    env_file: .env
+    environment:
+      BACKUP_INTERVAL: "1h"
+      INITIAL_DELAY: "5m" # 初回は起動に時間がかかるので少し待つ
+      PAUSE_IF_NO_PLAYERS: "true"
+      PRUNE_BACKUPS_DAYS: "7"
+      RCON_HOST: "127.0.0.1"
+      RCON_PASSWORD: ${MINECRAFT_RCON_PASSWORD}
+      EXCLUDES: "logs/*,*.jar,cache/*,*.log"
+    volumes:
+      - type: bind
+        source: ./data
+        target: /data
+        read_only: true
+      - type: bind
+        source: ./backups
+        target: /backups
+  bot:
+    image: ghcr.io/yashikota/minecraft-discord-whitelist-status-bot:0.3.0
+    container_name: mc-bot
+    restart: unless-stopped
+    depends_on:
+      - mc
+    network_mode: "service:mc"
+    env_file: .env
+    environment:
+      DISCORD_BOT_TOKEN: ${DISCORD_BOT_TOKEN}
+      DISCORD_STATUS_CHANNEL_ID: ${DISCORD_STATUS_CHANNEL_ID}
+      MINECRAFT_RCON_PASSWORD: ${MINECRAFT_RCON_PASSWORD}
